@@ -49,3 +49,9 @@
     gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
 }
+
+@mixin bgImage($url, $colorGradient) {
+    background-image: linear-gradient($colorGradient 0%, $colorGradient 100%), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
