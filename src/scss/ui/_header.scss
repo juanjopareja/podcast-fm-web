@@ -1,0 +1,38 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.site-header {
+    @include mix.bgImage('../img/header.jpg', var.$secondaryOpacity);
+    padding: 5rem 0;
+
+    .logo {
+        max-width: 20rem;
+        margin: 0 auto;
+
+        @include mix.tablet { 
+            margin: 0;
+        }
+    }
+
+    .header-content {
+        padding: 10rem 0;
+
+        @include mix.desktop { 
+            padding: 15rem 0;
+        }
+
+        h1 {
+            color: var.$white;
+            font-size: 4.5rem;
+
+            @include mix.tablet { 
+                font-size: 6rem;
+                max-width: 50%;
+            }
+
+            @include mix.desktop { 
+                max-width: 40%;
+            }
+        }
+    }
+}

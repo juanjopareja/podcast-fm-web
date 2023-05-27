@@ -1,0 +1,6 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.primary-button {
+    @include mix.button(var.$primary, var.$secondary);
+}
