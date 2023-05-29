@@ -1,0 +1,8 @@
+@use 'base/mixins' as mix;
+
+.make-grid {
+    @include mix.tablet {
+        @include mix.grid(2, 2rem);
+        align-items: center;
+    }
+}
