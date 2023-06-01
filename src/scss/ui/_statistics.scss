@@ -1,0 +1,8 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.statistics {
+    h2 {
+        @include mix.headingBorder(var.$secondary, var.$primary);
+    }
+}
